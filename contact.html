@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a class="nav-home" href="index.html">Home</a></li>
+      <li><a class="nav-tools" href="tools.html">Tools</a></li>
+      <li><a class="nav-products" href="products.html">Products</a></li>
+      <li><a class="nav-contact" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <h1>Contact</h1>
+  <p class="sub">
+    I don’t share my phone number or personal email.
+    If you’ve got real feedback or a question about a tool, use this.
+  </p>
+
+  <div class="card">
+    <span class="badge blue">Safer contact</span>
+
+    <p class="small">
+      This form doesn’t send anywhere yet. Next step is wiring it to a new email
+      made just for this site.
+    </p>
+
+    <form action="https://formspree.io/f/xgovynek" method="POST">
+      <input type="hidden" name="_redirect" value="index.html">
+
+      <label>Your name</label>
+      <input type="text" name="name" required>
+
+      <label>Your email</label>
+      <input type="email" name="email" required>
+
+      <label>Your message</label>
+      <textarea name="message" required></textarea>
+
+      <button class="btn" type="submit">Send</button>
+    </form>
+
+
+  </div>
+
+  <p class="note">
+    No spam. No marketing. Weird messages get ignored.
+  </p>
+</div>
+
+</body>
+</html>

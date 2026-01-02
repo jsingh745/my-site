@@ -1,0 +1,131 @@
+body{
+  font-family: Arial, sans-serif;
+  margin:0;
+  background:#000;
+  color:#fff;
+  min-height:100vh;
+}
+
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:18px 0;
+  background:#000;
+  border-bottom:1px solid #222;
+}
+
+nav ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:flex;
+  justify-content:center;
+  gap:50px;
+}
+
+nav a{
+  text-decoration:none;
+  font-weight:bold;
+  font-size:1.1rem;
+}
+
+.nav-home{color:#fff;}
+.nav-tools{color:#ff4d4d;}
+.nav-products{color:#ff4d4d;}
+.nav-contact{color:#4da6ff;}
+
+nav a:hover{opacity:.8;}
+
+.container{
+  max-width:900px;
+  margin:0 auto;
+  padding:140px 18px 60px;
+  text-align:center;
+}
+
+h1{
+  margin:0 0 10px;
+  font-size:2rem;
+}
+
+.sub{
+  margin:0 0 30px;
+  color:#cfcfcf;
+  font-size:1.1rem;
+  line-height:1.6;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+  gap:16px;
+  margin-top:18px;
+}
+
+.card{
+  border:1px solid #222;
+  border-radius:14px;
+  padding:18px;
+  text-align:left;
+  background:#0b0b0b;
+}
+
+.card h2{
+  margin:0 0 8px;
+  font-size:1.2rem;
+}
+
+.card p{
+  margin:0 0 14px;
+  color:#d7d7d7;
+  line-height:1.5;
+}
+
+.badge{
+  display:inline-block;
+  font-size:.85rem;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid #222;
+  color:#d7d7d7;
+}
+
+.badge.red{border-color:#3a1111;color:#ffb3b3;}
+.badge.blue{border-color:#0f2a44;color:#b9dcff;}
+
+.btn{
+  display:inline-block;
+  margin-top:6px;
+  padding:10px 12px;
+  border-radius:10px;
+  border:1px solid #222;
+  background:#111;
+  color:#fff;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+.btn:hover{border-color:#444;}
+
+.note{
+  margin-top:26px;
+  color:#bdbdbd;
+  font-size:.95rem;
+  line-height:1.6;
+}
+
+input, textarea{
+  width:100%;
+  padding:12px;
+  margin-top:10px;
+  border-radius:10px;
+  border:1px solid #222;
+  background:#0b0b0b;
+  color:#fff;
+  outline:none;
+}
+
+textarea{min-height:140px; resize:vertical;}
+label{display:block; margin-top:14px; text-align:left; color:#d7d7d7;}
+.small{font-size:.9rem; color:#bdbdbd;}
